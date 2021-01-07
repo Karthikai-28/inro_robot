@@ -1,0 +1,7 @@
+<launch>
+	<include file="$(find ros_robot)/launch/ros_robot_bringup.launch" />
+	<include file="$(find ros_robot)/launch/ros_robot_navigation.launch" />
+
+					<!--  ************** gmapping ***************  -->
+	<node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen"/>
+</launch>
